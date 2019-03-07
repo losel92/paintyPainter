@@ -44,10 +44,11 @@ function draw(){
   //draws the eraser box
   eraserBox.draw();
 
+  //as long as the mouse is being pressed, the lineSize is being updated
   if(mouseIsPressed){getOutsideValues();}
 }
 
-//draws a lines when the player drags the mouse
+//draws a lines when the player drags the mouse, or erases if erasing mode is on
 function mouseDragged(){
   if(!erasing){
     stroke(selectedColor);
